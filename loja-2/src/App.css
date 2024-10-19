@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+input{
+  outline: none;
+  border: none;
+}
+a{
+  text-decoration: none;
+}

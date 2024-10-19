@@ -1,0 +1,52 @@
+{
+  "usuarios": [
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo@hotmail.com",
+      "senha": "312",
+      "id": "1"
+    },
+    {
+      "id": "32a7",
+      "nome": "giovanni",
+      "email": "giovanni@terra.com",
+      "senha": "123"
+    },
+    {
+      "id": "18a9",
+      "nome": "daniel",
+      "email": "daniel@terra.com",
+      "senha": "123"
+    },
+    {
+      "id": "8af1",
+      "nome": "Dayanne",
+      "email": "dayanne@hotmail.com",
+      "senha": "312"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "produto": "Notebook Dell core i5",
+      "imagem": "https://a-static.mlcdn.com.br/470x352/notebook-dell-15-i5-1135g7-8gb-ssd256gb-vostro-3510-windows-10-pro-210-bcdk-nbv34-cinza/primetek/023690/98502beb8d450d1b74eec218d2a955b3.jpeg",
+      "preco": 2799
+    },
+    {
+      "id": "2",
+      "produto": "iPhone 11",
+      "imagem": "https://trocafone.vtexassets.com/arquivos/ids/330116-800-450?v=638472557142030000&width=800&height=450&aspect=true",
+      "preco": 1999
+    }
+  ],
+  "categorias": [
+    {
+      "id": "2",
+      "categoria": "games"
+    },
+    {
+      "id": "410f",
+      "categoria": "games"
+    }
+  ]
+}

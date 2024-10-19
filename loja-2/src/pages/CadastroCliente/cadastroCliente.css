@@ -1,0 +1,10 @@
+*{
+    margin: 0 !important;
+}
+.container1{
+    padding: 20px;
+    width: 100vw;
+    height: 80vh;
+    color: #fff;
+    background-color: blueviolet;
+}
