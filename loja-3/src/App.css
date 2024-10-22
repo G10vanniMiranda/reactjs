@@ -1,0 +1,15 @@
+.header{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+Button{
+    transition: .9s;
+}
+Button:hover{
+    cursor: pointer;
+    background-color: green;
+
+    transform: scale(1.03);
+}

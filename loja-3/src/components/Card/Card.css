@@ -1,0 +1,15 @@
+.card{
+    width: 150px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+
+    transition: .5s;
+    /* flex alinhamento*/
+}
+
+.card:hover{
+    transform: scale(1.1);
+}

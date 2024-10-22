@@ -1,0 +1,17 @@
+ul{
+    gap: 10px;
+    display: flex;
+}
+ul li{
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #1d1d1d;
+
+    opacity: .6;
+    transition: .9s;
+}
+ul li:hover{
+    opacity: 1;
+}
