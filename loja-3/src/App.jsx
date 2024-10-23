@@ -1,16 +1,14 @@
 import './App.css'
 import { Header } from "./components/Header"
-import { Product } from './pages/Product'
+import { Employee } from './pages/employee'
 
 function App() {
-
   return (
-    <div>
+    <div className='body-App'>
         <Header />
-        <Product />
+        <Employee />
       
     </div>
   )
 }
-
 export default App

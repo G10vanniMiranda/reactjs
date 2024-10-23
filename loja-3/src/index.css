@@ -11,8 +11,12 @@
 
 html, body{
     height: 100vh;     /* 100vh = view height;  100%; 100px; 100em; 100rem; */
-    max-width: 1200vw; /* vw = view width   */
+    
     background-color: blueviolet;
-    padding: 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     
 }

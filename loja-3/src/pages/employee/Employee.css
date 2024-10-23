@@ -1,0 +1,47 @@
+/* Exemplo 1 
+.card-item{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+
+    transition: .5s;
+}
+.card-item:hover{
+    transform: scale(1.2);
+}
+ */
+.card{
+    width: 100%;
+
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.card h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.card-item{
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: space-between;
+
+    transition: .9s;
+}
+.card-item:hover{
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    transform: scale(1.05);
+}

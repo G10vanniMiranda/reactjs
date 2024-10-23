@@ -1,3 +1,9 @@
+.body-App{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
 .header{
     gap: 10px;
     display: flex;

@@ -7,6 +7,7 @@ export function Nav(){
             <li>Produtos</li>
             <li>Serviços</li>
             <li>Contato</li>
+            <li>Funcionario</li>
         </ul>
     )
 }
