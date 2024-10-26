@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+</head>
+<body>
+    <div class="card">
+        <div class="img"></div>
+        <h2>Card1</h2>
+    </div>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 20px;
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+            color: #fff;
+            background-color: blueviolet;
+        }
+        .card{
+            width: 300px;
+            height: 250px;
+            background-color: #1d1d1d;
+
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img{
+            width: 150px;
+            height: 70px;
+            background-color: yellow;
+        }
+    </style>
+</body>
+</html>

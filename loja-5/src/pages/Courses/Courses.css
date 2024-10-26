@@ -1,0 +1,48 @@
+.courses-body{
+    padding-left: 50px;
+    padding-right: 50px;
+
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+.card{
+    border-radius: 10px;
+    border: 2px solid white;
+
+    width: 280px;
+    height: 190px;
+    transition: .5s;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    opacity: .5;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
