@@ -10,7 +10,9 @@ export function NavBar(){
             <ul>
                 <li> <Link to="/"> Home </Link> </li>
                 <li> <Link to="/courses"> Cursos </Link> </li>
-                <li> <Link to="/training" > Treinamentos </Link> </li>
+                <li> <Link to="/training"> Treinamentos </Link> </li>
+                <li> <Link to="/Product"> Produtos </Link> </li>
+                
             </ul>
             <button>Login</button>
         </div>
