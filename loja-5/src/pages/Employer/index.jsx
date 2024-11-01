@@ -12,7 +12,19 @@ export function Employer(){
 
             <main className="main1">
                 <section className="text">
+                    <div className="div-text">
+                        <h3>Como a inovação</h3>
+                        <h3>pode transformar</h3>
+                        <h3>pequenos negócio</h3>
+                    </div>
 
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </section>
 
                 <section className="card">
@@ -24,12 +36,14 @@ export function Employer(){
                         <button className="card-header-btn">...</button>
                     </div>
                     <div className="card-container">
-                        <img src="https://avatars.githubusercontent.com/u/134082250?v=4" alt="" />
-                        <div className="card-description">
-                            <img id="micro" src="image/micro.png" alt="" />
-                            <div className="card-description-text">
-                                <h3>Giovanni Miranda</h3>
-                                <p>Desenvolvedor Full Web</p>
+                        <div className="box-shadow">
+                            <img src="https://avatars.githubusercontent.com/u/134082250?v=4" alt="" />
+                            <div className="card-description">
+                                <img id="micro" src="image/micro.png" alt="" />
+                                <div className="card-description-text">
+                                    <h3>Giovanni Miranda</h3>
+                                    <p>Desenvolvedor Full Web</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <NavBar />
+        <header>
+            <h2>Ep. #153</h2>
+            <p></p>
+        </header>
+
+        <main class="main1">
+            <section class="text">
+                <h3>Como a inovação</h3>
+                <h3>pode transformar</h3>
+                <h3>pequenos negócio</h3>
+
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <div class="card-header">
+                    <button>
+                        <i class="fa-regular fa-circle-left"></i>
+                    </button>
+                    <img src="image/logo.png" alt="" />
+                    <button class="card-header-btn">...</button>
+                </div>
+                <div class="card-container">
+                    <div class="box-shadow">
+                        <img src="https://avatars.githubusercontent.com/u/134082250?v=4" alt="" />
+                        <div class="card-description">
+                            <img id="micro" src="image/micro.png" alt="" />
+                            <div class="card-description-text">
+                                <h3>Giovanni Miranda</h3>
+                                <p>Desenvolvedor Full Web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: blue;
+}
+header{
+    width: 100vw;
+    height: 20vh;
+
+    background: rgb(255,255,255);
+    background: linear-gradient( 90deg, 
+            rgba(255,255,255,1) 0%,
+            rgba(221, 203, 183, 0.978) 50%,
+            rgba(252,176,69,1) 100%
+    );
+}
+.main1{
+    height: 100vh;
+    background-color: coral;
+}
+.card{
+    width: 350px;
+    height: 70vh;
+    background-color: #fff;
+
+    /* elemento sai do fluxo */
+    top: 100px;
+    right: 30px;
+    position: absolute;
+
+    opacity: 1;
+    
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 70px;
+    width: 100%;
+}
+.card-header img{
+    width: 100px;
+    height: 50px;
+
+    border-radius: 0;
+}
+.box-shadow{
+    width: 280px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 380px;
+    margin-left: 30px;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-header button{
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+}
+.card-header button i{
+    color: black;
+    font-weight: 600;
+}
+.card-header .card-header-btn{
+    padding-bottom: 20px !important;
+}
+
+.card-container{
+    width: 80%;
+    height: 80%;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.card-container img{
+    width: 100%;
+    height: 300px;
+
+    
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-description{
+    position: relative;
+}
+.card-description img{
+    width: 40px;
+    height: 40px;
+}
+
+#micro{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-description-text{
+    top: 10px;
+    right: 0px;
+    width: 220px;
+    position: absolute;
+}
+.card-description-text h3, p{
+    color: #6b6f73;
+}
+    </style>
+</body>
+</html>

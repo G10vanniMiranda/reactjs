@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
 
-
     background-color: blue;
 }
 header{
@@ -25,7 +24,6 @@ header{
     height: 70vh;
     background-color: white;
 
-    /* elemento sai do fluxo */
     top: 330px;
     right: 30px;
     position: absolute;
