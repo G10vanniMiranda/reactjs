@@ -6,7 +6,7 @@ export function Employer(){
         <div className="container">
             <NavBar />
             <header>
-                <h2>Ep. #153</h2>
+                <h2 id="titulo">Ep. #153</h2>
                 <p></p>
             </header>
 
@@ -19,11 +19,26 @@ export function Employer(){
                     </div>
 
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li className="li-item">
+                            <img id="img99" src="image/item-1.png" alt="não carregou" />
+                            <p>cndl</p>
+                        </li>
+                        <li className="li-item">
+                            <img className="img99" src="image/item-1.png" alt="" />
+                            <p>fcdl</p>
+                        </li>
+                        <li className="li-item">
+                            <img className="img99" src="image/item-1.png" alt="" />
+                            <p>cdl</p>
+                        </li>
+                        <li className="li-item">
+                            <img className="img99" src="image/item-1.png" alt="" />
+                            <p>cdl</p>
+                        </li>
+                        <li className="li-item">
+                            <img className="img99" src="image/item-2.png" alt="" />
+                            <p>spc</p>
+                        </li>
                     </ul>
                 </section>
 
