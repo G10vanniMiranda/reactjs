@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsivo</title>
+</head>
+<body>
+
+    <nav>
+        <img src="./logo_branca.jpg" alt="">
+        
+        <ul id="desktop">
+            <li> <a href="#main">Principal</a> </li>
+            <li> <a href="#product">Produtos</a> </li>        
+            <li> <a href="#service">Sevicos</a> </li>        
+        </ul>
+
+        <button id="btn-register">Cadastra-se</button>
+        <button id="btn-mobile">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <section id="main">
+        <h2>Conteudo principal</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ducimus impedit neque quaerat voluptatibus consectetur repellendus dolores dolorem eos molestiae. Eveniet corporis ducimus quia iure facilis odit laborum odio fuga!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe magni iste dolor quidem laboriosam ab quod, voluptates nulla perspiciatis, recusandae ratione fuga voluptas excepturi quasi laudantium, praesentium facilis accusantium quibusdam.
+        </p>
+    </section>
+
+    <section id="product">
+        <h2>Produtos</h2>
+    </section>
+
+    <section id="service">
+        <h2>Serviços</h2>
+    </section>
+
+
+    <style>
+        *{
+            text-decoration: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+        nav{
+            width: 100vw;
+
+            top: 0;
+            left: 0;
+            position: fixed;
+
+            height: 15vh;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background-color: black;
+        }
+        nav img{
+            width: 200px;
+        }
+        nav ul{
+            gap: 10px;
+            padding: 10px;
+            display: flex;
+        }
+        nav ul li{
+            padding: 10px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        nav ul li:hover{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: green;
+        }
+        nav ul li a{
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+        }
+        #btn-mobile{
+            display: none;
+        }
+        section{
+            flex: 1;
+            min-height: 100vh; /* Ele só funcina se o elemento pai tiver um 'display: flex' */
+            background-color: blue;
+            padding: 0 100px;
+        }
+        section h2{
+            font-size: 2em;
+            margin-top: 150px;
+        }
+        #main{
+            background-color: blueviolet;
+        }
+        #product{
+            background-color: yellow;
+        }
+        #service{
+            background-color: blueviolet;
+        }
+
+        @media screen and ( max-width: 800px )  {
+            
+            #desktop, #btn-register{
+                display: none;
+            }
+            #btn-mobile{
+                display: block;
+                padding: 10px;
+                width: 50px;
+                height: 50px;
+
+                transition: .3s;
+                border-radius: 10px;
+            }
+            #btn-mobile:hover{
+                border-radius: 50%;
+                transform: rotate(90deg);
+            }
+            #btn-mobile i{
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    
+</body>
+</html>
