@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+
+    <img src="https://services.meteored.com/img/article/mais-planetas-no-sistema-solar-planetas-desconhecidos-podem-estar-no-limite-do-sistema-solar-1704146452357_1280.png" alt="não carrega imagem" >
+    
+    <section>
+        
+        <form>
+            
+            <div class="form-container">
+                <h1>Crie sua conta Agora!</h1>
+                <h3>Miranda Develop</h3>
+                <input id="nome" class="nome" type="text" placeholder="nome completo" >
+                <input id="email" type="text" placeholder="e-mail" >
+                <select>
+                    <option id="sexo" value="" > Sexo </option>
+                    <option value="feminino" > Feminino </option>
+                    <option value="masculino" > Masculino </option>
+                </select>
+                <button type="button" id="btnCadastrar" >Cadastrar</button>
+                <button>Entrar</button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden; /* Tirar a barra de rolagem */
+            display: flex;
+            justify-content: center;        
+        }
+        img{
+            flex: 1; /* Ocupa o espaço declarado */
+        }
+        form{
+            height: 120vh;
+            width: 400px; 
+
+            background-color: #1d1d1d;
+        }
+        .form-container{
+            padding: 100px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-container h3{
+            margin-bottom: 40px;
+        }
+        .form-container h1, h3{
+            color: white;
+            text-align: center;
+        }
+        .form-container input{
+            transition: .3s;
+        }
+        .form-container input:focus{
+            color: white;
+            letter-spacing: 2px; /* Espaçamento entre as letras */
+            background-color: green;
+        }
+        .form-container button{
+            transition: .3s;
+            cursor: pointer;
+            opacity: .7;
+        }
+        .form-container button:hover{
+            opacity: 1;
+            font-weight: 500;
+            color: white;
+            letter-spacing: 1px;
+            background-color: blueviolet;
+        }
+        .form-container input, select, button{
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 7px;
+            font-size: 1.2em;
+        }
+    </style>
+
+    <script>
+        var h1 = document.querySelector("h1")
+        // var nome = document.querySelector("#nome")
+        var nome = document.getElementById("nome")
+        var email = document.getElementById('email')
+        var btnCadastrar = document.querySelector("#btnCadastrar")
+
+        console.log(btnCadastrar)
+
+        // console.log(nome.value)
+        // console.log(email.value)  
+
+        btnCadastrar.onclick = (event) => {
+            event.preventDefault()
+            
+            if( nome.value == "" ){
+                alert("Por valor preencher o campo nome")
+                return false
+            }
+
+
+
+        }
+        
+    </script>
+    
+</body>
+</html>
