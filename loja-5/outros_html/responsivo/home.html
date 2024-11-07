@@ -21,10 +21,29 @@
             <li> <a href="#service">Sevicos</a> </li>
         </ul>
 
-        <button id="btn-register">Cadastra-se</button>
+        <div class="btn-group">
+            <button id="btn-register">Cadastra-se</button>
+            <button id="btn-sair">Sair</button>
+        </div>
         <button id="btn-mobile">
             <i class="fa-solid fa-bars"></i>
         </button>
+    </nav>
+
+    
+    <nav id="mobile">
+
+        <ul id="mobile-item">
+            <li> <a href="#main">Principal</a> </li>
+            <li> <a href="#product">Produtos</a> </li>
+            <li> <a href="#service">Sevicos</a> </li>
+        </ul>
+
+        <div class="btn-group">
+            <button id="btn-register">Cadastra-se</button>
+            <button id="btn-sair">Sair</button>
+        </div>
+
     </nav>
 
     <section id="main">
@@ -66,6 +85,25 @@
 
         }
 
+        #mobile{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            display: none;
+
+            background-color: black;
+        }
+
+        #mobile #mobile-item{
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        #mobile #mobile-item li{
+            font-size: 1.1em;
+        }
         nav {
             width: 100vw;
 
@@ -110,6 +148,19 @@
             font-size: 1.8rem;
             color: white;
             text-decoration: none;
+        }
+
+        #btn-sair{
+            color: white;
+            padding: 8px 15px;
+            border-radius: 10px;            
+            letter-spacing: 1px; /* Espaçamento entre as letras */
+
+            opacity: .7;
+            transition: .3s;
+            cursor: pointer;
+
+            background-color: red;
         }
 
         #btn-register{
@@ -162,7 +213,7 @@
         @media screen and (max-width: 800px) {
 
             #desktop,
-            #btn-register {
+            #btn-register, #btn-sair {
                 display: none;
             }
 
@@ -186,6 +237,20 @@
             }
         }
     </style>
+
+    <script>
+        var register = document.querySelector("#btn-register")
+        var mobile = document.querySelector("#mobile")
+        var btnMobile = document.querySelector("#btn-mobile")
+
+        register.onclick = () => {
+            window.location.href = "./tela-de-cadastro.html";
+        }
+
+        btnMobile.onclick = () => {
+            mobile.style.display = "flex"
+        }
+    </script>
 
 </body>
 

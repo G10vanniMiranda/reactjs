@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Cadastro</title>
+    <title>Tela de Login</title>
 </head>
 <body>
 
@@ -12,17 +12,13 @@
     <section>
         <form>
             <div class="form-container">
-                <h1>Crie sua conta Agora!</h1>
+                <h1>Seja Bem Vindo!</h1>
                 <h3>Miranda Develop</h3>
-                <input id="nome" class="nome" type="text" placeholder="nome completo" >
                 <input id="email" type="text" placeholder="e-mail" >
-                <select id="sexo">
-                    <option value="" > Sexo </option>
-                    <option value="feminino" > Feminino </option>
-                    <option value="masculino" > Masculino </option>
-                </select>
+                <input id="senha" type="password" placeholder="senha" >
+                
+                <button type="button" id="btnEntrar" >Entrar</button>
                 <button type="button" id="btnCadastrar" >Cadastrar</button>
-                <button>Entrar</button>
             </div>
 
         </form>
@@ -92,44 +88,44 @@
     </style>
 
     <script>
-        var h1 = document.querySelector("h1")
-        // var nome = document.querySelector("#nome")
-        var nome = document.getElementById("nome")
         var email = document.getElementById('email')
-        var sexo = document.querySelector("#sexo")
+        var senha = document.querySelector("#senha")
+        var entrar = document.querySelector("#btnEntrar")
         var btnCadastrar = document.querySelector("#btnCadastrar")
 
-        console.log(btnCadastrar)
+        /* 1 passo
+            console.log(email)  
+            console.log(senha)
+            console.log(entrar)
+            console.log(btnCadastrar)
+        */
 
-        // console.log(nome.value)
-        // console.log(email.value)  
-
+        /* 2   */
         btnCadastrar.onclick = (event) => {
             event.preventDefault()
             
-            if( nome.value == "" ){
-                alert("Por valor preencher o campo nome")
-                return false
-            }
+        
 
             if( email.value == "" ){
-                alert("Por valor preencher o campo email")
+                alert("Digita um email valido")
                 return false
             }
 
-            if( sexo.value == "" ){
-                alert("Selecionar o campo sexo")
+            if( senha.value == "" ){
+                alert("Digita o campo senha")
                 return false
             }
 
             setTimeout( () => {
                 window.location.href = "./home.html";
             }, 5000 )
+
+            alert("Seja bem vindo! " + email.value )
             
-            alert( "Cadastrado com sucesso" )
 
         }
         
+       
     </script>
     
 </body>
