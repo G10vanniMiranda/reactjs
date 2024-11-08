@@ -15,7 +15,10 @@
                 <h1>Seja Bem Vindo!</h1>
                 <h3>Miranda Develop</h3>
                 <input id="email" type="text" placeholder="e-mail" >
+                <p id="emailInfo" > Por favor colocar um E-mail válido </p>
+
                 <input id="senha" type="password" placeholder="senha" >
+                <p id="senhaInfor" > Senha com 6 ou mais digitos </p>
                 
                 <button type="button" id="btnEntrar" >Entrar</button>
                 <button type="button" id="btnCadastrar" >Cadastrar</button>
@@ -36,6 +39,7 @@
             display: flex;
             justify-content: center;        
         }
+        #emailInfo, #senhaInfor{ color: red !important; letter-spacing: 1.2px; display: none;}
         img{
             flex: 1; /* Ocupa o espaço declarado */
         }
@@ -91,7 +95,18 @@
         var email = document.getElementById('email')
         var senha = document.querySelector("#senha")
         var entrar = document.querySelector("#btnEntrar")
+        var btnEntrar = document.querySelector("#btnEntrar")
         var btnCadastrar = document.querySelector("#btnCadastrar")
+
+        // usuario permitido
+        var user1_email = "giovanni@gmail.com"
+        var user1_senha = "123"
+
+        // campos info
+        var emailInfo = document.querySelector("#emailInfo")
+        var senhaInfor = document.querySelector("#senhaInfor")
+
+        console.log(emailInfo, senhaInfor)
 
         /* 1 passo
             console.log(email)  
@@ -103,26 +118,48 @@
         /* 2   */
         btnCadastrar.onclick = (event) => {
             event.preventDefault()
-            
-        
+            window.location.href = "./tela-de-cadastro.html"
+        }
 
+        /* */
+
+        btnEntrar.onclick = (event) => {
+            event.preventDefault()
+            
             if( email.value == "" ){
-                alert("Digita um email valido")
-                return false
+                alert("O campo e-mail é obrigatório!")
+                return false;
             }
 
             if( senha.value == "" ){
-                alert("Digita o campo senha")
+                alert("O campo senha é obrigatorio!")
+                return false;
+            }
+
+
+            // 2 nivel de validação
+
+            if( email.value !== user1_email ){
+                // alert( "Email é inválido" )
+                emailInfo.style.display = "flex"
                 return false
+            } else {
+                // alert( "Email sucesso" )
+            }
+
+            if( senha.value !== user1_senha ){
+                // alert( "Senha inválida")
+                senhaInfor.style.display = "flex"
+                return false;
+            } else {
+                // alert( "Senha sucesso" )
             }
 
             setTimeout( () => {
-                window.location.href = "./home.html";
-            }, 5000 )
-
-            alert("Seja bem vindo! " + email.value )
+                window.location.href = "./home.html"
+            }, 3000)
+            alert("Login com sucesso")
             
-
         }
         
        

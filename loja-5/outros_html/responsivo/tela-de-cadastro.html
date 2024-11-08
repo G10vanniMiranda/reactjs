@@ -22,7 +22,7 @@
                     <option value="masculino" > Masculino </option>
                 </select>
                 <button type="button" id="btnCadastrar" >Cadastrar</button>
-                <button>Entrar</button>
+                <button id="btnEntrar" >Entrar</button>
             </div>
 
         </form>
@@ -98,11 +98,17 @@
         var email = document.getElementById('email')
         var sexo = document.querySelector("#sexo")
         var btnCadastrar = document.querySelector("#btnCadastrar")
+        var btnEntrar = document.querySelector("#btnEntrar")
 
         console.log(btnCadastrar)
 
         // console.log(nome.value)
         // console.log(email.value)  
+
+        btnEntrar.onclick = (event) => {
+            event.preventDefault()
+            window.location.href = "./tela-de-login.html"
+        }
 
         btnCadastrar.onclick = (event) => {
             event.preventDefault()

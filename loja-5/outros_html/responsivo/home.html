@@ -242,6 +242,7 @@
         var register = document.querySelector("#btn-register")
         var mobile = document.querySelector("#mobile")
         var btnMobile = document.querySelector("#btn-mobile")
+        var btnSair = document.querySelector("#btn-sair")
 
         register.onclick = () => {
             window.location.href = "./tela-de-cadastro.html";
@@ -249,6 +250,10 @@
 
         btnMobile.onclick = () => {
             mobile.style.display = "flex"
+        }
+
+        btnSair.onclick = () => {
+            window.location.href = "./tela-de-login.html"
         }
     </script>
 
