@@ -30,8 +30,8 @@
         </button>
     </nav>
 
-    
-    <nav id="mobile">
+
+    <nav id="mobile" class="esconder">
 
         <ul id="mobile-item">
             <li> <a href="#main">Principal</a> </li>
@@ -77,6 +77,7 @@
         }
 
         body {
+            min-width: 350px;
             height: 100vh;
             background-color: black;
 
@@ -85,25 +86,28 @@
 
         }
 
-        #mobile{
+        #mobile {
             position: fixed;
             top: 0;
             left: 0;
             width: 200px;
             height: 100vh;
-            display: none;
+            display: flex;
+            align-items: start;
 
             background-color: black;
         }
 
-        #mobile #mobile-item{
+        #mobile #mobile-item {
             color: white;
             display: flex;
             flex-direction: column;
         }
-        #mobile #mobile-item li{
+
+        #mobile #mobile-item li a {
             font-size: 1.1em;
         }
+
         nav {
             width: 100vw;
 
@@ -150,11 +154,16 @@
             text-decoration: none;
         }
 
-        #btn-sair{
+        .esconder {
+            display: none !important;
+        }
+
+        #btn-sair {
             color: white;
             padding: 8px 15px;
-            border-radius: 10px;            
-            letter-spacing: 1px; /* Espaçamento entre as letras */
+            border-radius: 10px;
+            letter-spacing: 1px;
+            /* Espaçamento entre as letras */
 
             opacity: .7;
             transition: .3s;
@@ -163,11 +172,12 @@
             background-color: red;
         }
 
-        #btn-register{
+        #btn-register {
             color: white;
             padding: 8px 15px;
-            border-radius: 10px;            
-            letter-spacing: 1px; /* Espaçamento entre as letras */
+            border-radius: 10px;
+            letter-spacing: 1px;
+            /* Espaçamento entre as letras */
 
             opacity: .7;
             transition: .3s;
@@ -176,8 +186,9 @@
             background-color: green;
         }
 
-        #btn-register:hover{
-            opacity: 1; /* Devolve a opacidade */
+        #btn-register:hover {
+            opacity: 1;
+            /* Devolve a opacidade */
             transform: scale(1.1);
         }
 
@@ -213,10 +224,10 @@
         @media screen and (max-width: 800px) {
 
             #desktop,
-            #btn-register, #btn-sair {
+            #btn-register,
+            #btn-sair {
                 display: none;
             }
-
             #btn-mobile {
                 display: block;
                 padding: 10px;
@@ -236,6 +247,7 @@
                 font-size: 1.5rem;
             }
         }
+
     </style>
 
     <script>
@@ -249,7 +261,8 @@
         }
 
         btnMobile.onclick = () => {
-            mobile.style.display = "flex"
+            // mobile.style.display = "flex"
+            mobile.classList.toggle("esconder")
         }
 
         btnSair.onclick = () => {
